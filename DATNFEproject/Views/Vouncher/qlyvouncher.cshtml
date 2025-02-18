@@ -1,0 +1,86 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Title"] = "qlyvouncher";
+}
+<div class="container-fluid">
+    <h1 class="text-center my-4">Voucher Management</h1>
+
+    <!-- Form Create New Voucher -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Create New Voucher</h5>
+            <form>
+                <div class="mb-3">
+                    <label for="voucherID" class="form-label">Voucher ID</label>
+                    <input type="text" class="form-control" id="voucherID" placeholder="Enter voucher ID">
+                </div>
+                <div class="mb-3">
+                    <label for="voucherName" class="form-label">Voucher Name</label>
+                    <input type="text" class="form-control" id="voucherName" placeholder="Enter voucher name">
+                </div>
+                <div class="mb-3">
+                    <label for="voucherType" class="form-label">Voucher Type</label>
+                    <input type="text" class="form-control" id="voucherType" placeholder="Enter voucher type">
+                </div>
+                <div class="mb-3">
+                    <label for="StartDate" class="form-label">Start Date</label>
+                    <input type="date" class="form-control" id="StartDate">
+                </div>
+                <div class="mb-3">
+                    <label for="endDate" class="form-label">End Date</label>
+                    <input type="date" class="form-control" id="endDate">
+                </div>
+                <button type="submit" class="btn btn-success">Create Voucher</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Voucher List -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Voucher List</h5>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Voucher ID</th>
+                        <th>Voucher Name</th>
+                        <th>Voucher Type</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>VC001</td>
+                        <td>Summer Sale</td>
+                        <td>Discount</td>
+                        <td>2025-01-01</td>
+                        <td>2025-01-31</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm">Edit</button>
+                            <button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>VC002</td>
+                        <td>New Year Sale</td>
+                        <td>Cashback</td>
+                        <td>2025-02-01</td>
+                        <td>2025-02-28</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm">Edit</button>
+                            <button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,92 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resource Management</title>
+    <link rel="stylesheet" href="../assets/css/styles.min.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center my-4">Resource Management</h1>
+
+        <!-- Form Thêm Tài Nguyên -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Add New Resource</h5>
+                <form>
+                    <div class="mb-3">
+                        <label for="resourceName" class="form-label">Resource Name</label>
+                        <input type="text" class="form-control" id="resourceName" placeholder="Enter resource name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="resourceType" class="form-label">Resource Type</label>
+                        <input type="text" class="form-control" id="resourceType" placeholder="Enter resource type">
+                    </div>
+                    <div class="mb-3">
+                        <label for="resourceQuantity" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="resourceQuantity" placeholder="Enter quantity">
+                    </div>
+                    <div class="mb-3">
+                        <label for="resourceDescription" class="form-label">Description</label>
+                        <textarea class="form-control" id="resourceDescription" rows="3" placeholder="Enter description"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Add Resource</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Danh sách Tài Nguyên -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Resource List</h5>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Resource Name</th>
+                            <th>Type</th>
+                            <th>Quantity</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Projector</td>
+                            <td>Equipment</td>
+                            <td>10</td>
+                            <td>High-quality projectors for presentations.</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Meeting Room</td>
+                            <td>Space</td>
+                            <td>2</td>
+                            <td>Spacious rooms with full amenities.</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
